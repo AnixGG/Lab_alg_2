@@ -19,4 +19,5 @@ def lin_alg():
                     count += 1
             answ.append(count)
     end_time_alg = time.time()
+    # print(*answ)
     return end_time_alg - start_time_alg

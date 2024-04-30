@@ -62,4 +62,5 @@ def map_alg():
             y_coord = l_ - 1
             answ.append(map_[y_coord][x_coord])
     end_time_alg = time.time()
+    # print(*answ)
     return end_time_prep - start_time_prep, end_time_alg - start_time_alg

@@ -75,7 +75,7 @@ def tree_alg():
     x_changes_y = []
     x_cords = set()
     y_cords = set()
-    n = 0
+    n = 0  # на вход не поддается количество прямоугольников - считаю сам
     start_time_prep = time.time()
     with open(rect_file) as f:
         for line in f:
@@ -150,4 +150,5 @@ def tree_alg():
             counter += root.count_rect
             answ.append(counter)
     end_time_alg = time.time()
+    # print(*answ)
     return end_time_prep - start_time_prep, end_time_alg - start_time_alg
